@@ -1,4 +1,4 @@
-import { db } from "../fireBasejs/firebaseconfig.js";
+import { db } from "../fireBasejs/firebaseconfig";
 import {
   collection,
   getDocs,
@@ -17,13 +17,13 @@ function choice() {
   balance.addEventListener("click", function () {
     // console.log(balance);
 
-    window.location.href = "balance.html";
+    window.location.href = "../Html/balance.html";
   });
 
   deposit.addEventListener("click", function () {
     // console.log(deposit);
 
-    window.location.href = "depositPage.html";
+    window.location.href = "../Html/depositPage.html";
   });
 }
 choice();
