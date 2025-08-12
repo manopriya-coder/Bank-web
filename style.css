@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #a7e3fa;
+  background: radial-gradient(
+    circle,
+    rgba(167, 227, 250, 1) 0%,
+    rgba(255, 255, 255, 1) 88%
+  );
+  position: relative;
+  font-family: dosis;
+
+}
+.shape {
+  width: 20%;
+  height: 40%;
+  background-color: rgba(240, 248, 255, 0.3);
+  /* background-color: aqua; */
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  animation: moveCircle 10s linear infinite;
+}
+@keyframes moveCircle {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 80%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.shape2 {
+  width: 20%;
+  height: 40%;
+  background-color: rgba(240, 248, 255, 0.3);
+  /* background-color: aqua; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  right: 65%;
+  animation: moveCircle2 10s linear infinite;
+}
+@keyframes moveCircle2 {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 80%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.shape3 {
+  width: 10%;
+  height: 20%;
+  background-color: rgb(240, 248, 255);
+  /* background-color: aqua; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  animation: moveCircle3 10s linear infinite;
+}
+@keyframes moveCirle3 {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 80%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.shape4 {
+  width: 10%;
+  height: 20%;
+  background-color: rgba(240, 248, 255, 0.5);
+  /* background-color: aqua; */
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  animation: moveCircle4 10s linear infinite;
+}
+
+@keyframes moveCircle4 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 40%;
+    top: 80%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+.shape:hover{
+  background-color: rgba(240, 248, 255, 0);
+}
+.shape2:hover{
+  background-color: rgba(240, 248, 255, 0);
+}
+.shape3:hover{
+  background-color: rgba(240, 248, 255, 0);
+}
+.shape4:hover{
+  background-color: rgba(240, 248, 255, 0);
+}
+.main {
+  width: 30%;
+  height: 80%;
+  background-color: rgba(240, 248, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main h1 {
+  font-family: dosis;
+  font-size: 48px;
+  color: white;
+}
+.main p {
+  font-family: dosis;
+  font-size: 18px;
+  color: white;
+}
+.main input {
+  width: 70%;
+  height: 6%;
+  font-size: 18px;
+  font-family: dosis;
+
+  border: rgb(77, 191, 248) solid 2px;
+}
+.main button {
+  width: 25%;
+  height: 6%;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 18px;
+  color: rgba(167, 227, 250, 1);
+  font-family: dosis;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main button:hover {
+  background-color: rgba(167, 227, 250, 0.5);
+  color: white;
+  font-size: 24px;
+  box-shadow: 5px 5px 10px white;
+}
+.nav {
+  /* width: 100%;
+    height: 10%; */
+  /* background-color: #a7e3fa; */
+  font-size: 32px;
+  font-family: dosis;
+  color: white;
+}
