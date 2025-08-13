@@ -35,7 +35,7 @@ async function deposit() {
   depositBtn.addEventListener("click", function () {
     const amount = depositAmt.value;
 
-    displayAmt.innerText = "You have deposit :" + amount;
+    displayAmt.innerText = "You have withdraw :" + amount;
     console.log(amount);
   });
 }

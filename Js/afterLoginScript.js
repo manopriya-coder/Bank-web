@@ -1,4 +1,4 @@
-import { db } from "../fireBasejs/firebaseconfig";
+import { db } from "../fireBasejs/firebaseconfig.js";
 import {
   collection,
   getDocs,
@@ -12,18 +12,26 @@ const getAccounts = async () => {
 function choice() {
   console.log("hello");
   const balance = document.querySelector(".balance");
-  const deposit =document.querySelector(".deposit")
+  const deposit =document.querySelector(".deposit");
+  const withDraw =document.querySelector(".withDraw");
+
 
   balance.addEventListener("click", function () {
     // console.log(balance);
 
-    window.location.href = "../Html/balance.html";
+    window.location.href = "./balance.html";
   });
 
   deposit.addEventListener("click", function () {
     // console.log(deposit);
 
-    window.location.href = "../Html/depositPage.html";
+    window.location.href = "./depositPage.html";
+  });
+
+  withDraw.addEventListener("click", function () {
+    // console.log(deposit);
+
+    window.location.href = "./withDraw.html";
   });
 }
 choice();
